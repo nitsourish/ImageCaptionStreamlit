@@ -11,3 +11,4 @@ tqdm==4.65.0
 pyaml==21.10.1
 PyYAML==6.0.1
 ruamel.yaml==0.17.17
+more-itertools
