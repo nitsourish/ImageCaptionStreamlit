@@ -4,7 +4,6 @@ import os
 import requests
 import gzip
 import numpy as np
-import matplotlib.pyplot as plt
 # %pip install opencv-python
 import cv2
 import random
