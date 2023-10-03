@@ -1,11 +1,9 @@
-import yaml
 import streamlit as st
 import os
 import requests
 import gzip
 import numpy as np
 # %pip install opencv-python
-import cv2
 import random
 import pickle
 from itertools import cycle
@@ -23,15 +21,9 @@ max_length = 32
 num_beams = 4
 gen_kwargs = {"max_length": max_length, "num_beams": num_beams}
 
-with open('demo/demo.yaml') as stream:
-    try:
-        env_vars = yaml.safe_load(stream)
-    except yaml.YAMLError as exc:
-        print(exc) 
-
 def show_sample_images():
-    filteredImages = {'First':'/home/sourish/Desktop/learning_practice/git_projects/image_caption_generation/images/IMG_4549.JPG', \
-                      'Second':'/home/sourish/Desktop/learning_practice/git_projects/image_caption_generation/images/IMG_4564.JPG'}
+    filteredImages = {'First':'../images/IMG_4549.JPG', \
+                      'Second':'../images/IMG_4564.JPG'}
     
     cols = cycle(st.columns(3)) 
     for filteredImage in filteredImages.values():
