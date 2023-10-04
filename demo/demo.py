@@ -59,8 +59,6 @@ def main():
     st.write('This is a sample app that demonstrates the prowess of ServiceFoundry ML model deployment.🚀')
     st.write('Visit the [Github](https://github.com/nitsourish/ImageCaptionStreamlit.git) repo for detailed exaplaination and to get started right away')
     tab1, tab2, tab3 = st.tabs(["Sample Images", "Image from computer", "Image from URL"])
-    # with tab1:
-    #     show_sample_images()
     with tab2:
         image_uploader()
     with tab3:
