@@ -22,8 +22,8 @@ num_beams = 4
 gen_kwargs = {"max_length": max_length, "num_beams": num_beams}
 
 def show_sample_images():
-    filteredImages = {'First':'../images/IMG_4549.JPG', \
-                      'Second':'../images/IMG_4564.JPG'}
+    filteredImages = {'First':'IMG_4549.JPG', \
+                      'Second':'IMG_4564.JPG'}
     
     cols = cycle(st.columns(3)) 
     for filteredImage in filteredImages.values():
